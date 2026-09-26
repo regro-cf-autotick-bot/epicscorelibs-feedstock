@@ -1,13 +1,13 @@
 {% set name = "epicscorelibs" %}
-{% set version = "7.0.10.99.0.1" %}
+{% set version = "7.0.10.99.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8c8d9730faef7df55f4d329c359a0e4c044f03a524dd2e4587e90132873edfd
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a5de1b5144fe3e64593f396f94c5b4389338118963d29d50349d7d28059acd2e
   patches:
     # These three patches together adapt epicscorelibs to use the
     # epics-base conda package's shared libraries, headers, and DBD files

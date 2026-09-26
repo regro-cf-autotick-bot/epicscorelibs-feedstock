@@ -196,4 +196,5 @@ Feedstock Maintainers
 * [@hhslepicka](https://github.com/hhslepicka/)
 * [@klauer](https://github.com/klauer/)
 * [@mrakitin](https://github.com/mrakitin/)
+* [@tacaswell](https://github.com/tacaswell/)
 

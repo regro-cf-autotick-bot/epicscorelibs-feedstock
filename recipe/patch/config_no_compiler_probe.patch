@@ -44,15 +44,6 @@ index b9b0b94..0bc53ac 100644
  
      machine = platform.machine().lower() # host CPU, may not reflect target bit width on windows
      bits = {
-@@ -63,6 +71,8 @@ def _makeconf():
-     elif osname=='Darwin':
-         if machine=='ppc':
-             HA = 'darwin-ppc'
-+        elif machine=='arm64':
-+            HA = 'darwin-aarch64'
-         else:
-             HA = 'darwin-x86'
- 
 @@ -121,12 +131,12 @@ def _makebuild():
          build['CXXFLAGS'] += ['-EHsc']
          build['LDADD'] += ['netapi32', 'ws2_32', 'advapi32', 'user32']
